@@ -4,13 +4,18 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Ride Booking App</title>
+    <title>Ride App</title>
 
     <style>
         body {
             font-family: Arial;
-            margin: 0;
             background: #f4f4f4;
+            margin: 0;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
         }
 
         .header {
@@ -20,15 +25,10 @@
             text-align: center;
         }
 
-        .container {
-            width: 80%;
-            margin: auto;
-        }
-
         .box {
-            margin-top: 30px;
             background: white;
             padding: 20px;
+            margin-top: 20px;
             border-radius: 10px;
         }
 
@@ -63,7 +63,7 @@
 
         .card img {
             width: 100%;
-            height: 150px;
+            height: 160px;
             object-fit: cover;
             border-radius: 10px;
         }
@@ -71,7 +71,6 @@
         .price {
             color: green;
             font-weight: bold;
-            font-size: 18px;
         }
     </style>
 </head>
@@ -87,33 +86,31 @@
     <div class="box">
         <h2>Book Your Ride</h2>
 
-        <form action="book" method="post">
-            <input type="text" name="pickup" placeholder="Pickup Location" required>
-            <input type="text" name="drop" placeholder="Drop Location" required>
-            <button type="submit">Find Ride</button>
-        </form>
+        <input type="text" placeholder="Pickup Location">
+        <input type="text" placeholder="Drop Location">
+        <button>Find Ride</button>
     </div>
 
-    <h2 style="margin-top:30px;">Choose Ride</h2>
+    <h2>Choose Ride</h2>
 
     <div class="grid">
 
         <div class="card">
-            <img src="images/bike.png">
+            <img src="images/bike.png" alt="Bike">
             <h3>Bike</h3>
             <p class="price">₹89</p>
             <button>Book Bike</button>
         </div>
 
         <div class="card">
-            <img src="images/auto.png">
+            <img src="images/auto.png" alt="Auto">
             <h3>Auto</h3>
             <p class="price">₹129</p>
             <button>Book Auto</button>
         </div>
 
         <div class="card">
-            <img src="images/cab.png">
+            <img src="images/cab.png" alt="Cab">
             <h3>Cab</h3>
             <p class="price">₹249</p>
             <button>Book Cab</button>
