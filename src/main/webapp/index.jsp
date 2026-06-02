@@ -38,28 +38,22 @@ button{padding:10px 15px;background:#00b894;border:none;color:white;border-radiu
 
 <h2>Choose Ride</h2>
 
-<div class="grid">
-
 <div class="card">
-<img src="${pageContext.request.contextPath}/images/bike.png">
-<h3>Bike</h3>
-<p class="price">₹89</p>
+    <img src="<%= request.getContextPath() %>/images/bike.png" alt="Bike">
+    <h3>Bike</h3>
+    <p class="price">₹89</p>
 </div>
 
 <div class="card">
-<img src="${pageContext.request.contextPath}/images/auto.png">
-<h3>Auto</h3>
-<p class="price">₹129</p>
+    <img src="<%= request.getContextPath() %>/images/auto.png" alt="Auto">
+    <h3>Auto</h3>
+    <p class="price">₹129</p>
 </div>
 
 <div class="card">
-<img src="${pageContext.request.contextPath}/images/cab.png">
-<h3>Cab</h3>
-<p class="price">₹249</p>
-</div>
-
-</div>
-
+    <img src="<%= request.getContextPath() %>/images/cab.png" alt="Cab">
+    <h3>Cab</h3>
+    <p class="price">₹249</p>
 </div>
 
 </body>
